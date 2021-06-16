@@ -40,6 +40,11 @@ This is the way to run the module:
 
 ## Sample <a name="Sample"></a>
 
+Input Image: <br>
+[Image](https://github.com/jojo96/asciimage/blob/main/pok.jpg)
+
+Output text file: <br>
+[Image](https://github.com/jojo96/asciimage/blob/main/pok_txt.png)
 
 If you like the library, please consider giving it a star on Github :)       
 
