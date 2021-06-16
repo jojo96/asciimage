@@ -8,6 +8,7 @@ To install: <br><b>pip install asciimage</b>
 1. [Installation](#installation)
 2. [Motivation](#motivation)
 3. [Example](#example)
+4. [Sample](#sample)
 
 
 ## Installation <a name="installation"></a>
@@ -37,4 +38,9 @@ This is the way to run the module:
 
 
 
-If you like the library, please consider giving it a star on Github :)                                  
+## Sample <a name="Sample"></a>
+
+
+If you like the library, please consider giving it a star on Github :)       
+
+
