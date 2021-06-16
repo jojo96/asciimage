@@ -1,9 +1,7 @@
 # asciimage
 
 A library designed in python to convert images into ascii paintings.
-To install: 
-
-pip install asciimage
+To install: <br><b>pip install asciimage</b>
 
 ### Table of Contents
 
