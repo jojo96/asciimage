@@ -28,8 +28,8 @@ This is the way to run the module:
 
 		from asciimage import *
 		from PIL import Image #import the module
-		image_path = "input_image.jpg"
-		file_path = "output.txt" #'output.txt' is the destination where the ASCII art will be stored
+		image_path = r"input_image.jpg"
+		file_path = r"output.txt" #'output.txt' is the destination where the ASCII art will be stored
 		ascii_char = list(",.")
 		height = 400 #intended height of output file
 		width = 400 #intended width of output file
