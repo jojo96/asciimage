@@ -1,0 +1,12 @@
+delete asciimage.egg-info, build, and dist folders
+Go to setup.py, change version no, make changes to other files as required
+
+For testing
+twine check dist/*
+python setup.py sdist bdist_wheel
+python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+
+For pypi.org
+twine check dist/*
+python setup.py sdist bdist_wheel
+python -m twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
