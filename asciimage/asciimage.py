@@ -1,4 +1,6 @@
 from PIL import Image
+from docx import *
+from docx.shared import *
 
 class asciimage:
     """
@@ -25,6 +27,9 @@ class asciimage:
         
 
     def make_ascii_image(self):
+        """
+        produces an ASCII image in a text file 
+        """
         from PIL import Image
         im = Image.open(self.image_path)#defined the image path
         im = im.resize((self.height, self.width), Image.NEAREST)#resizing using nearest interpolation
@@ -43,4 +48,31 @@ class asciimage:
             txt += '\n'
         with open(self.file_path, 'w') as f:
             f.write(txt)
+            
+    def make_colored_ascii(self, size):
+        """
+        produces a colored ASCII image in a doc file 
+        """
+        im = Image.open(self.image_path)#defined the image path
+        im = im.transpose(Image.ROTATE_90)
+        im = im.resize((size, size))
+        col = []
+        for i in range(im.size[0]):
+          colis = []
+          for j in range(im.size[1]):
+              if self.image_path.split('.')[-1] == 'png':
+                  (r,g,b,a) = im.getpixel((i, j))
+              else:
+                (r,g,b) = im.getpixel((i, j))   
+              
+              colis.append([r,g,b])
+          col.append(colis)
+        doc = Document()
+        doc_para = doc.add_paragraph('')
+        doc_para.paragraph_format.line_spacing = Inches(0.025)
+        for i in range(64):
+          for j in range(64):
+            doc_para.add_run("A").font.color.rgb = RGBColor(col[i][j][0],col[i][j][1],col[i][j][2])
+          doc_para.add_run('\n')
+        doc.save(self.file_path)        
             
