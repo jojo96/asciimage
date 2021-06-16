@@ -15,7 +15,7 @@ with open("README.md","r") as f:
 # This call to setup() does all the work
 setup(
     name="asciimage",
-    version="3.141",
+    version="3.14159265",
     description="ASCII art Python library",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -36,5 +36,5 @@ setup(
     ],
     packages=["asciimage"],
     include_package_data=True,
-    install_requires=["Pillow"]
+    install_requires=["Pillow","docx"]
 )
