@@ -12,7 +12,7 @@ To install: pip install asciimage
 
 ## Installation <a name="installation"></a>
 The repository contains a zipped file of my Python package asciimage and should be installed via pip.<br/>
-Instalation procedure: pip install asciimage
+Instalation procedure: <b>pip install asciimage</b>
 
 
 ## Motivation <a name="Motivation"></a>
