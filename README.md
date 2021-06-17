@@ -4,9 +4,13 @@ A library designed in python to convert images into ascii paintings.
 To install: <br><br>
 <b>pip install asciimage</b><br>
 <b>pip install docx</b><br>
-<b>pip install python-docx </b><br>
-For more exmamples or if you are still struggling with installation check out the <a href="https://github.com/jojo96/asciimage/blob/main/asciimage/asciimageExample.ipynb">Jupyter notebook</a>
-
+<b>pip install python-docx </b><br><br>
+For more examples or if you are still struggling with installation check out the <a href="https://github.com/jojo96/asciimage/blob/main/asciimage/asciimageExample.ipynb">Jupyter notebook</a>
+<br>
+<b>Note:</b> In some cases, you might get the error "No module named <b>'exceptions'</b>". This is because the docx and python-docx libraries are not installed properly.<br> 
+You can try the library extensively on <a href="https://colab.research.google.com/drive/1WEjeu8NB7tmz5i50QeisT2EK4b4Vk8ZX?usp=sharing">Google Colab</a>. Create a copy of this notebook and make edits as necessary.<br>
+<b>Also, in case of exception like 'too many values to unpack', try using a jpg image.</b><br>
+<b>This library works best with JPG images</b>
 
 ### Table of Contents
 

@@ -15,7 +15,7 @@ with open("README.md","r") as f:
 # This call to setup() does all the work
 setup(
     name="asciimage",
-    version="3.14159265",
+    version="3.1415926535",
     description="ASCII art Python library",
     long_description=long_description,
     long_description_content_type="text/markdown",
