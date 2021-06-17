@@ -10,3 +10,10 @@ For pypi.org
 python setup.py sdist bdist_wheel
 twine check dist/*
 python -m twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
+
+
+
+More resources:
+https://www.codementor.io/@ajayagrawal295/how-to-publish-your-own-python-package-12tbhi20tf
+
+https://towardsdatascience.com/deep-dive-create-and-publish-your-first-python-library-f7f618719e14
